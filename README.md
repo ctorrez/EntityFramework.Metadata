@@ -3,6 +3,7 @@
 
 Get table metadata for your Entity Framework entities.  Need to know the table name of your entity programatically?  Schema name?  Column name from a property?  EntityFramework.Metadata has that and more.
 
+``` c#
     static void Main()
     {
         var context = new MyDbContext();
@@ -24,6 +25,7 @@ Get table metadata for your Entity Framework entities.  Need to know the table n
 		[Column("MyName")]
 		public string Name { get; set; }
 	}
+```
 
 Forked from [EntityFramework.MappingAPI](https://efmappingapi.codeplex.com/) by Markko Legonkov.  Fixed bugs, added some unit tests, simplified the code and project structure, and removed support for EF5 and below.
 
